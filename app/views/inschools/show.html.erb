@@ -1,0 +1,28 @@
+<!-- <p id="notice"><%= notice %></p> -->
+
+<%= @inschool.created_at.strftime("%m/%d/%Y") %>
+<br>
+<br>
+
+Dear <%= @inschool.parent_name %>,<br>
+<br>
+Your child, <%= @inschool.studen_name %> will be suspended from class to attend in-school suspension in the office beginning on <%= @inschool.start_date %> and ending on <%= @inschool.end_date %> (<%= @inschool.days %> days) for violating the following in the Code of Student Conduct:<br>
+<br>
+<%= @inschool.reason.upcase %><br>
+<br>
+This misconduct has been explained to your child and has been given the opportunity to respond to these charges. I have considered reasonable alternatives to in-school suspension and determined that this action is most appropriate. <br>
+<br>
+You are asked to schedule a conference as soon as possible with a school administrator to discuss this violation of school policy. Any further disciplinary action will be discussed during this conference.<br>
+<br>
+The student will be given assignments during this in-school suspension. If you have any questions, feel free to call.<br>
+<br>
+<br>
+Thank you,<br>
+<br>
+<%= @inschool.administrator %>
+
+
+<br>
+<br>
+<br>
+Parent Signature/Date ______________________________________

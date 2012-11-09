@@ -1,0 +1,77 @@
+<h2>Enter Discipline Referral Below</h2>
+<hr>
+
+<%=link_to "Detention", detentions_path %><br>
+<%=link_to "ISS", inschools_path %><br>
+<%=link_to "Suspension", suspensions_path %><br>
+<%=link_to "Tardy", tardies_path %><br>
+
+
+<!-- <h4><%=link_to "#detention", "data-toggle"=>"modal" do %>
+              <%= "Detention" %>
+            <% end %><br>
+
+<%=link_to "#iss", "data-toggle"=>"modal" do %>
+              <%= "ISS" %>
+            <% end %><br>
+
+<%=link_to "#suspension", "data-toggle"=>"modal" do %>
+              <%= "Suspension" %>
+            <% end %><br>
+
+<%=link_to "#tardy", "data-toggle"=>"modal" do %>
+              <%= "Tardy" %>
+            <% end %><br>
+
+
+
+
+
+<div id="detention" class="modal hide fade">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">&times;</button>
+        <h3>Detention</h3>
+      </div>      
+      <div class="modal-body"> 
+        <%= render partial: "detentions/form"%>
+       </div>      
+</div>
+
+
+<div id="tardy" class="modal hide fade">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">&times;</button>
+        <h3>Tardy</h3>
+      </div>      
+      <div class="modal-body"> 
+        <%= render partial: "tardies/form"%>
+       </div>      
+</div>
+
+
+
+<div id="iss" class="modal hide fade">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">&times;</button>
+        <h3>ISS</h3>
+      </div>      
+      <div class="modal-body"> 
+        <%= render partial: "inschools/form"%>
+       </div>      
+</div>
+
+
+
+<div id="suspension" class="modal hide fade">
+
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal">&times;</button>
+        <h3>Suspension</h3>
+      </div>      
+      <div class="modal-body"> 
+        <%= render partial: "suspensions/form"%>
+       </div>      
+</div> -->

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  studen_first_name: MyString
+  student_last_name: MyString
+  parent_name: MyString
+  parent_address: MyString
+  tardy_days: MyText
+
+two:
+  studen_first_name: MyString
+  student_last_name: MyString
+  parent_name: MyString
+  parent_address: MyString
+  tardy_days: MyText

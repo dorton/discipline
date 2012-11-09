@@ -1,0 +1,37 @@
+<h1>Detentions</h1>
+
+<table class="table table-bordered table-hover table-condensed">
+  <tr>
+    <th>Student name</th>
+    <th>Parent name</th>
+    <th>Incident Date</th>
+    <th>Detention date</th>
+    <th>Grade</th>
+    <th>Teacher</th>
+    <th>Reason</th>
+    <th>Administrator</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @detentions.each do |detention| %>
+  <tr>
+    <td><%= detention.student_name %></td>
+    <td><%= detention.parent_name %></td>
+    <td><%= detention.created_at.strftime("%m/%d/%Y") %></td>
+    <td><%= detention.detention_date %></td>
+    <td><%= detention.grade %></td>
+    <td><%= detention.teacher %></td>
+    <td><%= detention.reason %></td>
+    <td><%= detention.administrator %></td>
+    <td><%= link_to 'Letter', detention, :target => "_blank" %></td>
+    <td><%= link_to 'Edit', edit_detention_path(detention) %></td>
+    <td><%= link_to 'Delete', detention, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Detention', new_detention_path %>

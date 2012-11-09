@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Studen first name:</b>
+  <%= @tardy.studen_first_name %>
+</p>
+
+<p>
+  <b>Student last name:</b>
+  <%= @tardy.student_last_name %>
+</p>
+
+<p>
+  <b>Parent name:</b>
+  <%= @tardy.parent_name %>
+</p>
+
+<p>
+  <b>Parent address:</b>
+  <%= @tardy.parent_address %>
+</p>
+
+<p>
+  <b>Tardy days:</b>
+  <%= @tardy.tardy_days %>
+</p>
+
+
+<%= link_to 'Edit', edit_tardy_path(@tardy) %> |
+<%= link_to 'Back', tardies_path %>

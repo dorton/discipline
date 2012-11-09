@@ -1,0 +1,39 @@
+<h1>ISS</h1>
+
+<table class="table table-bordered table-hover table-condensed">
+  <tr>
+    <th>Studen name</th>
+    <th>Parent name</th>
+    <th>Teacher</th>
+    <th>Grade</th>
+    <th>Days</th>
+    <th>Start date</th>
+    <th>End date</th>
+    <th>Administrator</th>
+    <th>Reason</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @inschools.each do |inschool| %>
+  <tr>
+    <td><%= inschool.studen_name %></td>
+    <td><%= inschool.parent_name %></td>
+    <td><%= inschool.teacher %></td>
+    <td><%= inschool.grade %></td>
+    <td><%= inschool.days %></td>
+    <td><%= inschool.start_date %></td>
+    <td><%= inschool.end_date %></td>
+    <td><%= inschool.administrator %></td>
+    <td><%= inschool.reason %></td>
+    <td><%= link_to 'Letter', inschool, :target => "_blank" %></td>
+    <td><%= link_to 'Edit', edit_inschool_path(inschool) %></td>
+    <td><%= link_to 'Delete', inschool, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New ISS', new_inschool_path %>

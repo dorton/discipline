@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  studen_name: MyString
+  parent_name: MyString
+  teacher: MyString
+  grade: MyString
+  days: MyString
+  start_date: 2012-10-18
+  end_date: 2012-10-18
+  administrator: MyString
+  reason: MyText
+
+two:
+  studen_name: MyString
+  parent_name: MyString
+  teacher: MyString
+  grade: MyString
+  days: MyString
+  start_date: 2012-10-18
+  end_date: 2012-10-18
+  administrator: MyString
+  reason: MyText

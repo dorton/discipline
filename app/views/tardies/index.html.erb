@@ -1,0 +1,31 @@
+<h1>Tardies</h1>
+
+<table class="table table-bordered table-hover table-condensed">
+  <tr>
+    <th>Studen first name</th>
+    <th>Student last name</th>
+    <th>Parent name</th>
+    <th>Parent address</th>
+    <th>Tardy days</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tardies.each do |tardy| %>
+  <tr>
+    <td><%= tardy.studen_first_name %></td>
+    <td><%= tardy.student_last_name %></td>
+    <td><%= tardy.parent_name %></td>
+    <td><%= tardy.parent_address %></td>
+    <td><%= tardy.tardy_days %></td>
+    <td><%= link_to 'Letter', tardy, :target => "_blank" %></td>
+    <td><%= link_to 'Edit', edit_tardy_path(tardy) %></td>
+    <td><%= link_to 'Delete', tardy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Tardy', new_tardy_path %>
